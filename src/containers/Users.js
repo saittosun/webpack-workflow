@@ -1,9 +1,7 @@
 // jshint esversion: 9
 import React, {Component} from 'react';
 
-import Users from '../components/PizzaImage/PizzaImage';
-
-class Pizza extends Component {
+class Users extends Component {
   render() {
     return (
       <div>

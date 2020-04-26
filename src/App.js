@@ -15,7 +15,7 @@ class App extends Component {
       <div>
         <div>
           {/* I want to reach my users and the pizza part should be lazy loaded so add just a pipe symbol and a whitespace to have some separator between the links. */}
-          <Link to="/">Users</Link>
+          <Link to="/">Users</Link> | 
           <Link to="/pizza">Pizza</Link>
         </div>
         <div>
