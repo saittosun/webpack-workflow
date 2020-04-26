@@ -18,5 +18,14 @@ module.exports = {
   },
   // controls how source maps are generated which help us with debugging when we run our code in the browser so we can debug our original code. Rather then the bundled and optimized and transformed code.
   // cheap-module-eval-source-map which is a certain way of generating quite good source maps.
-  devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-eval-source-map',
+  module= {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      }
+    ]
+  }
 }
